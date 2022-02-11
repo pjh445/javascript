@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Array</title>
+</head>
+
+<body>
+
+<h1>배열을 이용한 HTML 추가</h1>
+<ul>목록</ul>
+
+<script>
+let myArray = ['apple', 'banana', 'orange'];
+let $li="";
+for(let i=0; i<3; i++){
+	$li += "<li>" + myArray[i] + "</li>";	
+}
+document.querySelector('ul').innerHTML= $li;
+</script>
+
+</body>
+</html>

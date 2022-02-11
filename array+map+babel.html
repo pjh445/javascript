@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>ES6 Array Babel map() Methods</title>
+<!-- Load React API -->
+<script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<!-- Load React DOM-->
+<script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<!-- Load Babel ES6 컴파일러 -->
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+
+<h1>바벨을 이용한 HTML 배열 렌더링</h1>
+<ul>목록</ul>
+
+<script type="text/babel">
+const myArray = ['apple', 'banana', 'orange'];
+const myList = myArray.map( item =>  <li>{ item }</li>  );
+ReactDOM.render(myList, document.querySelector('ul'));
+</script>
+
+</body>
+</html>

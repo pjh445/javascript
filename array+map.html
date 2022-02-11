@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>ES6 map() Method</title>
+</head>
+
+<body>
+
+<h1>map()메소드를 이용한  HTML 배열 렌더링</h1>
+<ul>목록</ul>
+
+<script>
+const myArray = ['apple', 'banana', 'orange'];
+const items = myArray.map( x =>  "<li>" + x + "</li>"  );
+console.log(items);
+document.querySelector('ul').innerHTML= items;
+const itemsC = document.querySelector('ul').innerHTML;
+//전역검색 키워드 g로 모든 쉽표 없애기
+const itemsM = itemsC.replace(/,/g, "");
+document.querySelector('ul').innerHTML= itemsM;
+</script>
+
+</body>
+</html>
